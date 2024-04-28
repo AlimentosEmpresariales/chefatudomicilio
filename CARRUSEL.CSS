@@ -1,0 +1,87 @@
+@keyframes Carrusel
+{
+  from{
+    transform: rotateY(360deg) translateZ(100px);
+    z-index: 10;
+    opacity: 0.9;
+  }
+  50%{
+    z-index: -10;
+  }
+
+  to{
+    transform: rotateX(0deg) translateZ(100px) rotateX(0deg);
+    z-index: 10;
+  }
+}
+
+.tarjetas{
+  display: flex;
+  animation: Carrusel 8s linear infinite;
+}
+
+.tarjeta{
+  background-color: #442222;
+  font-size: 15px;
+  position: absolute;
+  top: 35px;
+  left: 125px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tarjeta h3{
+  color: white;
+  font-size: 75px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 150px;
+  background-color: #ff0000;
+}
+
+
+
+
+  #bakugo {
+    background-image: url(images/Divertidos/1.jpg);
+    animation-delay: -7s;
+  }
+  
+  #deku {
+    background-image: url(images/Divertidos/2.jpg);
+    animation-delay: -6s;
+  }
+  
+  #todoroki {
+    background-image: url(images/Divertidos/3.jpg);
+    animation-delay: -5s;
+  }
+  
+  #Red_Riot {
+    background-image: url(images/Divertidos/4.jpg);
+    animation-delay: -4s;
+  }
+  
+  #lemillion {
+    background-image: url(images/Divertidos/5.jpg);
+    animation-delay: -3s;
+  }
+  
+  #all_might {
+    background-image: url(images/Divertidos/6.jpg);
+    animation-delay: -2s;
+  }
+  
+  #shigaraki {
+    background-image: url(images/Divertidos/7.jpg);
+    animation-delay: -1s;
+  }
+  
+  #all_for_one {
+    background-image: url(images/Divertidos/8.jpg);
+  }
+  
+  .tarjeta:hover {
+    box-shadow: 0px 0px 10px rgb(255, 0, 0);
+  }
+
